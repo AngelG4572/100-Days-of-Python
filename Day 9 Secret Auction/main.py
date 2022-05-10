@@ -1,9 +1,7 @@
 from art import logo
-
-# import only system from os
 from os import system, name
 
-# define our clear function
+#Create clear function to substitute the one she provides (repl.it exclusive)
 def clear():
     # for windows
     if name == 'nt':
@@ -37,3 +35,5 @@ for bidder in bidders_dict:
 
 clear()
 print(f"The highest bidder is {winner} at ${highest_bid}.")
+
+#I love beb <3
