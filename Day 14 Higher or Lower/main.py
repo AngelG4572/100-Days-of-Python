@@ -13,14 +13,17 @@ def clear():
 
 
 def create_person():
+    """Picks a random person/dictionary from game_data."""
     return random.choice(data)
 
 
 def print_person(person):
-    return f"{person['name']}, a {person['description']}, from {person['country']}. {person['follower_count']}"
+    """Formats the data so it prints readably."""
+    return f"{person['name']}, a {person['description']}, from {person['country']}."
 
 
 def compare_candidates(first_choice, second_choice):
+    """Compares the two choices and returns which one has more followers."""
     if first_choice["follower_count"] > second_choice["follower_count"]:
         return "A"
     else:
@@ -32,6 +35,8 @@ def game():
     score = 0
     candidate_a = create_person()
     candidate_b = create_person()
+    if candidate_b == candidate_a:
+        candidate_b = create_person()
     running = True
 
     while running:
