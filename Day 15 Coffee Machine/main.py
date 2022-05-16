@@ -33,6 +33,7 @@ money = 0
 
 
 def report():
+    """Prints a report of the resources and profit."""
     print(f"Water: {resources['water']}ml")
     print(f"Milk: {resources['milk']}ml")
     print(f"Coffee: {resources['coffee']}g")
@@ -40,6 +41,7 @@ def report():
 
 
 def check_resources(drink):
+    """Compares the drink ingredients against the resources to see if there's enough to make the coffee."""
     for ingredient in MENU[drink]["ingredients"]:
         if resources[ingredient] < MENU[drink]["ingredients"][ingredient]:
             print(f"Sorry, there's not enough {ingredient}.")
@@ -48,6 +50,7 @@ def check_resources(drink):
 
 
 def check_money():
+    """Take's in the user's coins and calculates their value."""
     print("Please insert coins.")
     quarters = int(input("How many quarters? "))
     dimes = int(input("How many dimes? "))
