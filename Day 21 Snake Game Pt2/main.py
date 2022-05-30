@@ -40,10 +40,8 @@ while running:
         running = False
         scoreboard.game_over()
 
-    for square in snake.segments:
-        if square == snake.head:
-            continue
-        elif snake.head.distance(square) < 10:
+    for square in snake.segments[1:]:
+        if snake.head.distance(square) < 10:
             running = False
             scoreboard.game_over()
 
