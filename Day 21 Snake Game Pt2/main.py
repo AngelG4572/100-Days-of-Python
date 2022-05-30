@@ -36,7 +36,7 @@ while running:
         scoreboard.score_up()
         snake.add_square()
 
-    if not -280 <= snake.head.xcor() <= 280 or not -280 <= snake.head.ycor() <= 280:
+    if not -290 <= snake.head.xcor() <= 290 or not -290 <= snake.head.ycor() <= 290:
         running = False
         scoreboard.game_over()
 
