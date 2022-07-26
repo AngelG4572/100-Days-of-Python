@@ -7,6 +7,7 @@ LANG_FONT = ("Arial", 40, "italic")
 WORD_FONT = ("Arial", 60, "bold")
 
 # ---------------------------- PANDAS ------------------------------- #
+data = {}
 try:
     data = pandas.read_csv("data/words_to_learn.csv")
 except FileNotFoundError:
@@ -17,8 +18,7 @@ finally:
     word_dict = data.to_dict(orient="records")
 
 # ---------------------------- COMMANDS ------------------------------- #
-new_word = ''
-flip_timer = None
+new_word = {}
 
 
 def change_word():
