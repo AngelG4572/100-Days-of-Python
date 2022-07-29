@@ -27,3 +27,5 @@ for person in data_dict:
                 connection.login(user=MY_EMAIL, password=MY_PASSWORD)
                 connection.sendmail(from_addr=MY_EMAIL, to_addrs=person["email"],
                                     msg=f"Subject:Happy Birthday!\n\n{email_content}")
+
+# I love u beby<3
