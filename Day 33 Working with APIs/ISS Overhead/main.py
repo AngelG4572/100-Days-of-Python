@@ -70,3 +70,5 @@ while True:
                                 msg=f"Subject:Look Up!\n\nThe ISS is overhead!")
             print("Email sent!")
     sleep(60)
+
+# Dedicated to beb <3
